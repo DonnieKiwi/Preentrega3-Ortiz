@@ -7,46 +7,54 @@
 }
 
 .navbar {
-    background-color: rgb(212, 53, 53);
-    text-transform: capitalize;
-}
+        background-color: rgb(212, 53, 53);
+        text-transform: capitalize;
 
-.navbar a {
-    color: whitesmoke;
-    font-family: 'Oswald', sans-serif;
-}
-.collapse{
-    transform: translate(100px, 10px);
-}
+        .navbar-toggler i {
+            color: whitesmoke;
+            font-size: 25px;
+            padding-top: 2px;
+        }
 
-.navbar-brand{
-    font-weight: bold;
-    font-size: x-large;
-}
-.navbar-brand span {
-    color: aqua !important;
-}
+        a {
+            color: whitesmoke;
+            font-family: 'Oswald', sans-serif;
+        }
 
-.navbar-nav{
-    margin-bottom: 20px;
-}
-.navbar-toggler i {
-    color: whitesmoke;
-    font-size: 25px;
-    padding-top: 2px;
-}
-.nav-item{
-    text-align: center;
+        .navbar-brand{
+            font-weight: bold;
+            font-size: x-large;
+
+            span {
+                color: aqua !important;
+            }
+        }
+
+        .collapse{
+            transform: translate(100px, 10px);
+
+            .navbar-nav{
+                margin-bottom: 20px;
+
+                .nav-item{
+                    text-align: center;
+
+                    .nav-link:hover{
+                        color: rgb(49, 46, 46);
+                        border-radius: 5px;
+                    }
+                    
+                }
+                .nav-item:hover{
+                    background-color:rgb(212, 53, 53);
+                    text-decoration: none; 
+                }
+                
+            }
+        }
     
-}
-.nav-item:hover{
-    background-color:rgb(212, 53, 53);
-    text-decoration: none; 
-}
-.nav-link:hover{
-    color: rgb(49, 46, 46);
-    border-radius: 5px;
-}
+    }
+
 
 .jumbotron{
     height: 500px;
@@ -58,32 +66,44 @@
     text-align: end;
     border-radius: 0% ;
     margin-bottom: 0%;
+
+    .intron{
+        color: white;
+        width: auto;
+        float: right;
+        background-color: rgba(0, 0, 0, 0.575);
+        border: 3px solid red;
+        padding: 35px;
+        font-family: 'Oswald', sans-serif;
+
+        a{
+            text-decoration: none;
+            color: white;
+            background-color: rgb(212, 53, 53);
+            padding: 7px;
+            border-radius: 5px;
+            text-transform: capitalize;
+        }
+        a:hover {
+            color: black;
+            text-decoration: none;
+            border: 2px solid red;
+        }
+        
+    }
 }
 
-.intron{
-    color: white;
-    width: auto;
-    float: right;
-    background-color: rgba(0, 0, 0, 0.575);
-    border: 3px solid red;
-    padding: 35px;
-    font-family: 'Oswald', sans-serif;
+.carousel-item {
+    height: 400px;
+
+    .carousel-caption{
+        font-family: 'Oswald', sans-serif;
+        color: black;
     
-}
-
-.intron a{
-    text-decoration: none;
-    color: white;
-    background-color: rgb(212, 53, 53);
-    padding: 7px;
-    border-radius: 5px;
-    text-transform: capitalize;
-}
-
-.intron a:hover {
-    color: black;
-    text-decoration: none;
-    border: 2px solid red;
+        h3{
+            text-transform: capitalize;
+        }
+    }
 }
 
 h2 {
@@ -98,26 +118,6 @@ h2 {
     margin-bottom: 0;
 }
 
-.carousel-item {
-    height: 400px;
-    background-size: cover !important;
-    background-position: center !important;
-}
-.carousel-caption{
-    font-family: 'Oswald', sans-serif;
-    color: black;
-}
-.carousel-caption h3{
-    text-transform: capitalize;
-}
-
-.img-juego{
-    background-color: rgb(212, 53, 53);
-    background-image: url(img/toymanonene.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-}
 
 .titulo-juego{
     background-color: rgb(212, 53, 53);
@@ -125,6 +125,25 @@ h2 {
     text-transform: capitalize;
     font-family: 'Oswald', sans-serif;
     padding: 20PX;
+
+    h3{
+        text-align: center;
+    }
+
+    a{
+        color: whitesmoke;
+        background-color:grey;
+        border: 1px solid red;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    a:hover{
+        background-color: rgb(212, 53, 53) ; 
+        border: 2px solid black;
+        color: black;
+        border-radius: 5px;
+    }
     
 }
 h3::selection{
@@ -135,13 +154,13 @@ p::selection{
     background-color: white;
     color:rgb(212, 53, 53) ;
 }
-.titulo-juego h3{
-    text-align: center;
-}
-.titulo-juego a{
-    color: black;
-    background-color: white;
-    padding: 10px 20px;
+
+.img-juego{
+    background-color: rgb(212, 53, 53);
+    background-image: url(img/toymanonene.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
 }
 
 .img2{
@@ -165,17 +184,17 @@ footer {
     color: whitesmoke;
     font-family: 'Oswald', sans-serif;
 
+    p {
+        margin-bottom: 15px;
+    }
+
+    i {
+        font-size: 50px;
+        letter-spacing: 20px;
+        color: rgb(212, 53, 53);
+    }
 } 
 
-footer p {
-    margin-bottom: 15px;
-}
-
-footer i {
-    font-size: 50px;
-    letter-spacing: 20px;
-    color: rgb(212, 53, 53);
-}
 
 .subir {
     height: 10px;
