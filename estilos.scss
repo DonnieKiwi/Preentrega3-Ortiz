@@ -55,6 +55,9 @@ $color3: rgb(49, 46, 46);
                     text-decoration: none; 
                 }
                 
+                li:nth-child(6){
+                    background-color: $color3;
+                }
             }
         }
     
@@ -241,6 +244,10 @@ $micolor1: rgb(135, 25, 25);
 $micolor2: rgb(100, 14, 14);
 $micolor3: rgb(130, 16, 16);
 
+@mixin hue-rotate($grados){
+    filter:hue-rotate($grados)
+}
+
 @for $i from 1 through 3 {
     .item#{$i} {
         background-color: lighten($micolor1, $i * 10%);
@@ -259,5 +266,6 @@ $micolor3: rgb(130, 16, 16);
     .item#{$i} {
         background-color: lighten($micolor3, $i * 5%);
         background-image: url(img/img#{$i}.jpeg);
+        @include hue-rotate(200deg);
     }
 }
