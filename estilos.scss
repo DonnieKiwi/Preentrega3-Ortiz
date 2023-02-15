@@ -56,7 +56,9 @@ $color3: rgb(49, 46, 46);
                 }
                 
                 li:nth-child(6){
-                    background-color: $color3;
+                    background-color: red;
+                    border-radius: 4px;
+                    
                 }
             }
         }
